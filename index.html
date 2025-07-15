@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>1-2 CODE?</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="module" defer src="lib/index.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -18,11 +20,24 @@
     <div class="alarm-section">
         <h2>Set Alarm</h2>
         <div class="input-group">
-            <input type="date" id="date-input">
+            <input type="date" id="date-input" min="new Date()">
             <input type="time" id="time-input">
         </div>
         <input type="text" id="location-input" placeholder="Enter target location">
         <ul id="suggestions"></ul>
+
+        <br>
+        <div>
+            <label id="allowances-label">Time Allowances</label>
+            <div id="allowances"></div>
+            <div class="allowance-group">
+                <input id="new-allowance" type="number" placeholder=""></input>
+                <select id="new-allowance-type">
+                </select>
+                <button id="new-allowance-add">Add</button>
+                <input id="new-allowance-label" type="text" placeholder="Allowance Label"></input>
+            </div>
+        </div>
     </div>
 
     <button id="save-btn">Save</button>
@@ -76,7 +91,5 @@
     </p>
     <button id="closeTermsBtn">Close</button>
 </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -94,6 +98,38 @@ input[type="time"]:hover,
 
 #suggestions li:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+
+#allowances {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 7.5px;
+}
+
+#new-allowance,
+#new-allowance-type,
+#new-allowance-add {
+    color: white;
+    width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#new-allowance-label {
+    color: white;
+    width: 65%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.remove-allowance {
+    margin-right: 5%;
+    height: 35px;
+    width: 35px;
+    background: rgb(125, 35, 35);
+    border: 0px;
+    border-radius: 20%;
 }
 
 #save-btn {
